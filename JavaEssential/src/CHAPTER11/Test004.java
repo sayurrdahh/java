@@ -15,8 +15,6 @@ public class Test004 extends JFrame {
 		setVisible(true);
 		setContentPane(new Mypanel());
 		
-		
-
 	}
 	public static void main(String[] args) {
 		new Test004();
@@ -26,6 +24,7 @@ public class Test004 extends JFrame {
 		private Point p = null;//point 정수 정밀도로 지정되는 (x, y) 좌표 공간에서의 위치를 나타내는 점입니다.
 		public Mypanel() {
 		
+
 			addMouseMotionListener(new MouseMotionAdapter() {
 				@Override
 				public void mouseDragged(MouseEvent e) {
@@ -37,6 +36,7 @@ public class Test004 extends JFrame {
 		private ImageIcon icon = new ImageIcon("src/images/four.jpg");
 		private Image im = icon.getImage();
 		
+		//동영상은 사진의 연속인것처럼
 		
 		@Override
 		protected void paintComponent(Graphics g) {

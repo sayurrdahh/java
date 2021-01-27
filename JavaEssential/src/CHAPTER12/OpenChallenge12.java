@@ -49,7 +49,7 @@ public class OpenChallenge12 extends JFrame{
 					
 					if(avatar.getY()>monster.getY())
 						monster.setLocation(monster.getX(), monster.getY()+10);
-					monster.getParent().repaint();
+					//monster.getParent().repaint(); 이거 왜쓰는거지
 					
 					try {
 					

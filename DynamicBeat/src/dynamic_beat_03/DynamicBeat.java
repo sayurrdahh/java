@@ -54,8 +54,8 @@ public class DynamicBeat extends JFrame{
 			System.exit(0);
 			}
 		});
-
-		add(exitButton);		
+	
+		add(exitButton);	//메뉴바보다 앞에 있어야함	
 		
 		menuBar.setBounds(0,0,1280,30);
 		menuBar.addMouseListener(new MouseAdapter() {
@@ -73,8 +73,8 @@ public class DynamicBeat extends JFrame{
 				setLocation(x-mouseX,y-mouseY);
 			}
 		});
-		add(menuBar);
 		
+		add(menuBar);
 		introBackground = new ImageIcon(Main.class.getResource("../images/introBackground(title).jpg")).getImage();
 		Music introMusic = new Music("introMusic.mp3",true);
 		introMusic.start();
